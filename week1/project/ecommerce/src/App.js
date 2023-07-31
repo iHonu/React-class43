@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Products from './products';
+import ProductList from './product-list';
 import Categories from './category';
+import { products } from './fake-data/all-products';
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -11,7 +12,7 @@ export default function App() {
         activeCategory={activeCategory}
         onActiveCategory={setActiveCategory}
       />
-      <Products activeCategory={activeCategory} />;
+      <ProductList products={products} activeCategory={activeCategory} />;
     </div>
   );
 }
