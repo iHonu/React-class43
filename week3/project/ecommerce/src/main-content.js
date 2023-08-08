@@ -15,7 +15,6 @@ export default function Main() {
 
   return (
     <div>
-      <h1 className="text-3xl font-semibold my-4">Products</h1>
       <Categories
         categories={categories}
         activeCategory={activeCategory}
